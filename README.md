@@ -16,10 +16,10 @@ The BERT tokenizer (BertTokenizer) is used to tokenize and encode the text data.
 A BERT-based sequence classification model (BertForSequenceClassification) is initialized. The model is configured for the number of unique labels in the dataset.
 
 # Data Loaders:
-Training and validation data loaders (DataLoader) are created to efficiently load batches of data during training.
+Training and validation data loaders (DataLoader) are created to load batches of data during training efficiently.
 
 # Training Loop:
-The model is trained in a loop over a specified number of epochs. The training loop includes forward and backward passes, gradient clipping, and optimization using the AdamW optimizer. The model is saved after each epoch.
+The model is trained in a loop over a specified number of epochs. The training loop includes forward and backward passes, gradient clipping, and AdamW optimizer optimization. The model is saved after each epoch.
 
 # Evaluation:
 The model is loaded after training, and its performance is evaluated on the validation set. The evaluation includes calculating the loss and F1 score.
@@ -28,4 +28,10 @@ The model is loaded after training, and its performance is evaluated on the vali
 The saved model is loaded, and its performance is demonstrated by evaluating predictions on the validation set and displaying accuracy per class.
 
 # Dependencies and Environment:
-The code specifies dependencies, such as the torch, pandas, tqdm, and transformers libraries. It is designed to run in a Colab environment.
+The code specifies dependencies like the torch, pandas, tqdm, and transformers libraries.
+
+
+# Required Python Version is 3.10.0
+If you're using vs code or any other IDE then install the 3.10.0 version and then install the libraries you'll not face any errors then, & don't forget to change the path of the .csv file and the location where you want to save the model.
+
+# Thanks...!
